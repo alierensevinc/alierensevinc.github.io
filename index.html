@@ -1,1 +1,115 @@
-<h1>Hello World !</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(90deg, #1e3c72 0%, #2a5298 50%);
+            color: #f4f6fc;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .portfolio-item {
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-image {
+            height: 200px;
+            width: 200px;
+            border: 5px solid #f4f6fc;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-custom {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-custom:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-github {
+            background-color: #888;
+            border-color: #888;
+        }
+
+        .btn-medium {
+            background-color: #00ab6c;
+            border-color: #00ab6c;
+        }
+
+        .btn-linkedin {
+            background-color: #0077b5;
+            border-color: #0077b5;
+        }
+
+        .btn-appstore {
+            background-color: #5fc9f8;
+            border-color: #5fc9f8;
+        }
+
+        .btn-googleplay {
+            background-color: #3ddc84;
+            border-color: #3ddc84;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 32px 16px 32px 16px;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card d-flex flex-column flex-md-row justify-content-around align-items-center">
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center mb-4 mb-md-0">
+                    <img src="./avatar.jpg" alt="Portfolio Image" class="portfolio-image rounded-circle">
+                    <h3>Ali Eren Sevinç</h3>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="https://github.com/alierensevinc" class="btn btn-custom btn-github">GitHub</a>
+                    <a href="https://medium.com/@sevinc.aeren" class="btn btn-custom btn-medium">Medium</a>
+                    <a href="https://linkedin.com/in/alierensevinc" class="btn btn-custom btn-linkedin">LinkedIn</a>
+                    <a href="https://apps.apple.com/tr/developer/ali-eren-sevinc/id1751933016?l=tr"
+                       class="btn btn-custom btn-appstore">App Store</a>
+                    <a href="https://play.google.com/store/apps/developer?id=alierensevinc"
+                       class="btn btn-custom btn-googleplay">Google Play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
